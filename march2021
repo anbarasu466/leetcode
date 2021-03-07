@@ -2,6 +2,7 @@ public class Codec {
 
     HashMap<String,String> shortToLong = new HashMap<String,String>();;
     int count = 0;
+    //testing
     // Encodes a URL to a shortened URL.
     public String encode(String longUrl) {
         String shortUrl = "http://tinyurl.com/"+ count++;
