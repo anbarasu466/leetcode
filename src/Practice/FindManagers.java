@@ -32,7 +32,7 @@ public class FindManagers {
         }
 
         for (var  entry: employeeToManagerMappings.entrySet()) {
-            System.out.println(entry.getKey() + " -> " + entry.getValue());
+          //  System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
 
         System.out.println("************************************************************");
