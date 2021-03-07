@@ -1,0 +1,24 @@
+public class Codec {
+
+    HashMap<String,String> shortToLong = new HashMap<String,String>();;
+    int count = 0;
+    // Encodes a URL to a shortened URL.
+    public String encode(String longUrl) {
+        String shortUrl = "http://tinyurl.com/"+ count++;
+        
+        shortToLong.put(shortUrl,longUrl);
+        
+        return shortUrl;
+    }
+
+    // Decodes a shortened URL to its original URL.
+    public String decode(String shortUrl) {
+        if(shortToLong.containsKey(shortUrl))
+            return shortToLong.get(shortUrl);
+        return "";
+    }
+}
+
+// Your Codec object will be instantiated and called as such:
+// Codec codec = new Codec();
+// codec.decode(codec.encode(url));
